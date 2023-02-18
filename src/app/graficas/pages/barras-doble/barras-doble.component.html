@@ -1,0 +1,27 @@
+<h1>Gráficas Dobles</h1>
+<hr />
+
+<!--
+  * El objetivo de esta parte es insertar los gráficos en Angular por medio del componente app-grafica-barra
+  * Y utilizar inputs
+-->
+
+<div class="row">
+  <div class="col-md-6">
+    <!-- Gráfica 1 -->
+    <app-grafica-barra
+      [horizontal]="true"
+      [inputDatasets]="productoData.datasets"
+      [inputLabels]="proveedoresData.labels"
+    >
+    </app-grafica-barra>
+  </div>
+
+  <div class="col-md-6">
+    <!-- Gráfica 2 -->
+    <app-grafica-barra
+      [inputDatasets]="proveedoresData.datasets"
+      [inputLabels]="proveedoresData.labels"
+    ></app-grafica-barra>
+  </div>
+</div>
